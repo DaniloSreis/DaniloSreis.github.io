@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Desenvolvedor Front End Localizado em São Paulo">
+</head>
+
+<body>
+    <header class="header container">
+        <img src="img/marca.svg" alt="" width="104" height="38">
+        <nav>
+            <ul class="header-menu">
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#formcacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="introducao container">
+        <!-- a image tem uma largura definida de 360px, mas pode diminuir por causa do max-width: 100%; por causa do height="520px" a imagem sempre terá uma altura de 520px isso pode distorcer a imagem, por isso colocamos height: auto para que ele diminua a altura do elemento de acordo com o height definido-->
+        <img src="img/perfil.jpg" alt="" class="foto-perfil" width="360" height="520">
+        <div class="area">
+            <h1 class="titulo">Desenvolvedor<br>Front End</h1>
+            <p>Localizado em São Paulo 🏙️</p>
+        </div>
+    </main>
+    <!-- Estudar sobre arial-label -->
+    <section class="experiencia container" id="experiencia" aria-label="Experiência">
+        <h2 class="subtitulo">Experiência</h2>
+        <div>
+            <p class="texto">Desenvolvo pequenos projetos como a Sumus onde atuei como <strong>Desenvolvedor Web</strong> e <strong>UI/UX Designer</strong> utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>Figma</strong>.</p>
+            <div class="projeto">
+                <span class="data-projeto">2024</span>
+                <h3 class="projeto-titulo">Sumus</h3>
+                <span class="funcao projeto-titulo">Front-End e UI/UX Designer</span>
+                <p class="atuacao">Atuei como desenvolvedor web principalmente cuidanado do HTML, CSS e JavaScript e como UI/UX Designer</p>
+                <ul class="habilidades">
+                    <li class="habilidade">Html</li>
+                    <li class="habilidade">Css</li>
+                    <li class="habilidade">JavaScript</li>
+                    <li class="habilidade">UI Desiner</li>
+                    <li class="habilidade">UX Desiner</li>
+                </ul>
+            </div>
+            <div class="projeto">
+                <span class="data-projeto">###</span>
+                <h3 class="projeto-titulo">###</h3>
+                <span class="funcao projeto-titulo">##</span>
+                <p class="atuacao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at officia vero impedit.</p>
+                <ul class="habilidades">
+                    <li class="habilidade">Html</li>
+                    <li class="habilidade">Css</li>
+                    <li class="habilidade">JavaScript</li>
+
+                </ul>
+            </div>
+            <div class="projeto">
+                <span class="data-projeto">###</span>
+                <h3 class="projeto-titulo">###</h3>
+                <span class="funcao projeto-titulo">##</span>
+                <p class="atuacao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at officia vero impedit.</p>
+                <ul class="habilidades">
+                    <li class="habilidade">Html</li>
+                    <li class="habilidade">Css</li>
+                    <li class="habilidade">JavaScript</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="formacao" id="formacao" aria-label="Formacao">
+        <div class="container">
+            <h2 class="subtitulo">Formação</h2>
+            <div>
+                <p class="texto">
+                    Minha mais recente experiência acadêmica foi o <strong>Tecnólogo</strong> em <strong>Desenvolvimento de Software Multiplataforma</strong> na Fatec Luigi Papaiz.
+                </p>
+                <ul class="faculdade-lista">
+                    <li class="faculdade">
+                        <span class="faculdade-tipo">Tecnólogo</span>
+                        <h3 class="faculdade-curso">Desenvolvimento de Software Multiplataforma</h3>
+                        <span class="faculdade-instituicao">Fatec Luigi Papaiz</span>
+                </ul>
+
+                <div class="formacao-extra">
+                    <div class="cursos">
+                        <h3>Cursos</h3>
+                        <ul>
+                            <li>HTML e CSS <span>23h</span></li>
+                        </ul>
+                    </div>
+                    <div class="idiomas">
+                        <h3>Idiomas</h3>
+                        <ul>
+                            <li>Inglês <span>/ Básico</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contato">
+        <div class="footer-contato container">
+            <p class="footer-texto">Estou disponível para novos projetos
+                no momento. Entre em contato comigo
+                e marcamos uma conversa. 👋🏽</p>
+            <ul class="footer-contato">
+                <li>nome12@gmail.com</li>
+                <li>+55 11 99999-9999</li>
+                <li>Likedin</li>
+            </ul>
+            <p class="footer-copy">Eu. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

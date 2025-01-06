@@ -1,0 +1,67 @@
+/* Estudar sobre elementos blocks e inline 
+https://stackoverflow.com/questions/14394028/why-is-displayblock-necessary-when-there-is-a-image-background
+
+https://pt.stackoverflow.com/questions/404377/por-que-width-e-height-n%C3%A3o-funciona-neste-caso
+
+Danilo veja algum vídeo no youtube
+*/
+
+.introducao {
+  /* Um item block com um tamanho máximo podemos alinhar com margin: 0 auto */
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+/* Não usar valores quebrados para facilitar o seu trabalho */
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+  }
+  .introducao h1::before {
+    content: "";
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao img {
+    display: none;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+}
